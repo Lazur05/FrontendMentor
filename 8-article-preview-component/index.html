@@ -7,21 +7,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/output.css" />
     <title>Article Preview Component</title>
   </head>
-  <body>
-    <h1 class="text-amber-600">Jajo</h1>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+  <body class="bg-light-grayish-blue">
+    <div class="card-container h-dvh flex justify-center items-center">
+      <div class="card m-5 bg-white rounded-2xl">
+        <div class="hero-img">
+          <img
+            src="src/img/drawers.jpg"
+            alt="green drawer with two frames and a plant"
+            class="rounded-t-2xl"
+          />
+        </div>
+        <div class="content p-7">
+          <p class="title my-3 text-[1.2rem] font-bold text-dark-grayish-blue">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </p>
+          <p class="description text-dark-blue">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="profile relative flex items-center p-7">
+          <img
+            src="src/img/avatar-michelle.jpg"
+            alt="Michelle Appleton avatar"
+            class="profile-picture w-12 h-12 mr-4 rounded-full"
+          />
+          <div class="profile-desc">
+            <p class="profile-name font-bold text-dark-grayish-blue">
+              Michelle Appleton
+            </p>
+            <p class="article-date text-dark-blue">28 Jun 2020</p>
+          </div>
+          <div
+            class="profile-share-btn absolute right-5 top-1/2 p-3 bg-light-grayish-blue rounded-full lg:cursor-pointer"
+          >
+            <img src="src/img/icon-share.svg" alt="share icon" class="w-9" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer class="attribution">
+    <footer class="attribution absolute bottom-0">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" class=""
         >Frontend Mentor</a
