@@ -14,16 +14,18 @@
     <title>Article Preview Component</title>
   </head>
   <body class="bg-light-grayish-blue">
-    <div class="card-container h-dvh flex justify-center items-center">
+    <main class="card-container h-dvh flex justify-center items-center">
       <div class="card m-5 bg-white rounded-2xl">
-        <div class="hero-img">
+        <div
+          class="hero-img overflow-hidden max-h-[14rem] sm:overflow-visible sm:max-h-full"
+        >
           <img
             src="src/img/drawers.jpg"
             alt="green drawer with two frames and a plant"
             class="rounded-t-2xl"
           />
         </div>
-        <div class="content p-8">
+        <div class="content p-8 pb-3">
           <p class="title my-3 text-[1.2rem] font-bold text-dark-grayish-blue">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
@@ -34,7 +36,7 @@
             you make any room feel complete.
           </p>
         </div>
-        <div class="profile relative flex items-center px-8 pb-6">
+        <div class="profile relative flex items-center px-8 py-4">
           <img
             src="src/img/avatar-michelle.jpg"
             alt="Michelle Appleton avatar"
@@ -47,13 +49,47 @@
             <p class="article-date text-dark-blue">28 Jun 2020</p>
           </div>
           <div
-            class="profile-share-btn absolute right-7 p-3 bg-light-grayish-blue rounded-full lg:cursor-pointer"
+            class="profile-share-btn absolute right-7 p-3 bg-light-grayish-blue rounded-full lg:cursor-pointer z-20"
           >
-            <img src="src/img/icon-share.svg" alt="share icon" class="w-4" />
+            <svg
+              class="profile-share-icon fill-dark-blue"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+            >
+              <path
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+          </div>
+          <div
+            class="share-menu menu-reveal flex items-center px-7 absolute w-full h-full left-0 bg-dark-grayish-blue z-10 rounded-b-2xl invisible"
+          >
+            <p class="share-title text-grayish-blue tracking-[.5em]">SHARE</p>
+            <div class="share-social-box flex justify-around w-30 ml-2">
+              <img
+                src="./src/img/icon-facebook.svg"
+                alt="facebook icon"
+                width="25"
+                class="cursor-pointer"
+              />
+              <img
+                src="./src/img/icon-twitter.svg"
+                alt="Twitter icon"
+                width="25"
+                class="cursor-pointer"
+              />
+              <img
+                src="./src/img/icon-pinterest.svg"
+                alt="Pinterest icon"
+                width="25"
+                class="cursor-pointer"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer class="attribution absolute bottom-0">
       Challenge by
@@ -62,6 +98,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
 
-    <script type="module" src="./src/js/main.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
