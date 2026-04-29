@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --default-font-family: "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-family:
+    "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --color-dark-grayish-blue: hsl(217, 19%, 35%);
   --color-dark-blue: hsl(214, 17%, 51%);
