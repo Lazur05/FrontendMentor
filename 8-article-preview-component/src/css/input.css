@@ -10,3 +10,12 @@
 
   --text-default: 13px;
 }
+
+@utility menu-reveal {
+  clip-path: circle(0% at calc(100% - 46px) calc(100% - 45px));
+  transition: clip-path 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@utility menu-reveal-open {
+  clip-path: circle(150% at calc(100% - 46px) calc(100% - 45px));
+}
