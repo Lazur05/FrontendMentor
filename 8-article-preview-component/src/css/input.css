@@ -13,6 +13,24 @@
   --text-default: 13px;
 }
 
+@utility btn-inactive {
+  background-color: var(--color-light-grayish-blue);
+  transition: background-color 0.8s ease;
+}
+
+@utility btn-active {
+  background-color: var(--color-dark-blue);
+}
+
+@utility icon-inactive {
+  fill: var(--color-dark-blue);
+  transition: fill 0.8s ease;
+}
+
+@utility icon-active {
+  fill: var(--color-light-grayish-blue);
+}
+
 @utility menu-reveal {
   clip-path: circle(0% at calc(100% - 46px) calc(100% - 45px));
   transition: clip-path 0.55s cubic-bezier(0.4, 0, 0.2, 1);
