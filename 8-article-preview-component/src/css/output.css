@@ -167,9 +167,6 @@
   }
 }
 @layer utilities {
-  .invisible {
-    visibility: hidden;
-  }
   .absolute {
     position: absolute;
   }
@@ -262,11 +259,12 @@
     border-bottom-right-radius: var(--radius-2xl);
     border-bottom-left-radius: var(--radius-2xl);
   }
+  .btn-inactive {
+    background-color: var(--color-light-grayish-blue);
+    transition: background-color 0.8s ease;
+  }
   .bg-dark-grayish-blue {
     background-color: var(--color-dark-grayish-blue);
-  }
-  .bg-grayish-blue {
-    background-color: var(--color-grayish-blue);
   }
   .bg-light-grayish-blue {
     background-color: var(--color-light-grayish-blue);
@@ -274,10 +272,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .fill-dark-blue {
-    fill: var(--color-dark-blue);
+  .btn-active {
+    background-color: var(--color-dark-blue);
   }
-  .fill-light-grayish-blue {
+  .icon-inactive {
+    fill: var(--color-dark-blue);
+    transition: fill 0.8s ease;
+  }
+  .icon-active {
     fill: var(--color-light-grayish-blue);
   }
   .p-3 {
@@ -324,6 +326,7 @@
   }
   .menu-reveal-open {
     clip-path: circle(150% at calc(100% - 46px) calc(100% - 45px));
+    transition: clip-path 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .sm\:max-h-full {
     @media (width >= 40rem) {
