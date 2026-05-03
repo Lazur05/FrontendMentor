@@ -15,17 +15,19 @@
   </head>
   <body class="bg-light-grayish-blue">
     <main class="card-container h-dvh flex justify-center items-center">
-      <div class="card m-5 bg-white rounded-2xl">
+      <div
+        class="card m-5 bg-white rounded-2xl lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-5"
+      >
         <div
-          class="hero-img overflow-hidden max-h-[14rem] sm:overflow-visible sm:max-h-full"
+          class="hero-img overflow-hidden max-h-56 xs:max-w-full xs:max-h-112 lg:row-span-2 lg:h-full"
         >
           <img
             src="src/img/drawers.jpg"
             alt="green drawer with two frames and a plant"
-            class="rounded-t-2xl"
+            class="rounded-t-2xl sm:size-[200%] lg:size-full"
           />
         </div>
-        <div class="content p-8 pb-3">
+        <div class="content p-8 pb-3 lg:col-span-2 lg:p-0">
           <p class="title my-3 text-[1.2rem] font-bold text-dark-grayish-blue">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
@@ -36,7 +38,9 @@
             you make any room feel complete.
           </p>
         </div>
-        <div class="profile relative flex items-center px-8 py-4">
+        <div
+          class="profile relative flex items-center px-8 py-4 lg:row-start-2 lg:col-start-2 lg:col-span-2 lg:p-0"
+        >
           <img
             src="src/img/avatar-michelle.jpg"
             alt="Michelle Appleton avatar"
