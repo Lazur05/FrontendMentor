@@ -11,6 +11,8 @@
   --color-light-grayish-blue: hsl(210, 46%, 95%);
 
   --text-default: 13px;
+
+  --breakpoint-xs: 30rem;
 }
 
 @utility btn-inactive {
